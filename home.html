@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumi in my Tumi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    <!-- The script is above since i use a "defer" function to make it work above. It doesn't change anything -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/dadd9d2da2.js" crossorigin="anonymous"></script>
+</head>
+  <body class="bg-warning-subtle body-container container-fluid container-sm">
+    <!-- Navbar with all the links associated with the Food App -->
+    <nav class="navbar bg-success fixed-top navbarfixed">
+      <!-- This is where you can add a class to change the menu color scheme -->
+      <div class="container-fluid justify-content-between">
+        <img src="/image/newicon3-hs.png" style="max-width:60px" class="thumbnail img-fluid">
+        <!-- this is where the logo will be placed -->
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <!-- above is where you change the color of the toggle bar -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header bg-warning-subtle">
+              <!-- color scheme div -->
+            <h5 class="offcanvas-title text-dark fs-1 fw-bolder" id="offcanvasDarkNavbarLabel">MENU</h5>
+            <!-- color scheme for the MENU title -->
+            <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-warning-subtle">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item text-capitalize text-center border border-dark rounded my-3 fw-bold fs-3 text-black-50">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+                <li class="nav-item text-capitalize text-center border border-dark rounded my-3 fw-bold fs-3 text-black-50">
+                  <a class="nav-link active" aria-current="page" href="analyze.html">Analyze My Ingrdients</a>
+                </li>
+                <li class="nav-item text-capitalize text-center border border-dark rounded my-3 fw-bold fs-3 text-black-50">
+                  <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                </li>
+                <!-- i added some style but it can be changed, i was just testing out the features. -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div>
+  <br>
+
+    
+   
+
+
+  <div class="container-fluid container-sm container-lg mt-1">
+        <!-- Welcome Text -->
+        <h1 class="text-center mt-5 h1-title d-flex container-sm ">WELCOME TO  YUMMI</h1>
+        <h3 class="slogan">--Make what your heart desire--</h3>
+    <!-- Brief description of nav-bar -->
+      <p class="fs-4 mt-5 text-light-500 text-lg fw-bolder">Type in below your ingregients :</p>
+  <!-- RECIPE API Search Bar -->
+
+  <div class="input-group mb-3 ">
+    
+    <input type="text" class="form-control search-input pizza" aria-label="Text input with dropdown button"  placeholder="Seperate with a comma ',': Pasta, Bread...etc">
+    </input>
+
+    <button class="btn btn-success input-group-btn pizza fs-5 fw-bold" id="search-button" type="submit">
+      Search
+    </button>
+
+  </div>
+
+  <!-- THIS WILL BE THE LOCATION FOR THE ALLERGY INPUT -->
+  <div class="d-grid pizza">
+    <p class="fs-4 text-light-500 text-lg fw-bolder">Exclude your allergies :</p>
+    <button class="btn text-bg-primary bg-danger fw-bold fs-5 rounded-pill mb-3 pizza " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Allergy Button
+    </button>
+</div>
+  
+<!-- THIS IS A COLLAPSE FEATURE FROM BOOTSTRAP -->
+  <div class="collapse my-2 pizza" id="collapseExample">
+    <div class="card card-body filter-body pizza fs-5">
+      <input type="text" placeholder="Seperate with a comma ',': Tomatoes, Onions...etc" class="border-1 border-danger rounded-bottom-0 pizza filter-input">
+      <button type="submit" class="btn btn-danger rounded-0 pizza fs-5 filter-btn">Submit</button>
+    </div>
+  </div>
+
+   
+  
+  <!-- THIS IS THE RESULR DIV -->
+    <div class=" resultdiv d-flex flex-wrap gap-lg-3 gap-5 justify-content-center pizza container-fluid container-lg my-3 align-bottom">
+    </div>
+    <!-- THE IS THE RESULT DIV -->
+  
+
+  
+ 
+
+
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="bg-success fixed-bottom text-center text-light fw-semibold h-5 fs-6 container-fluid ">&#169; <script>document.write
+  ((new Date().getFullYear())+ "-"+ (new Date().getMonth() + 1)+ "-"+ (new Date().getDate()))</script> YUMMI</footer>
+  <!-- FOOTER SECTION -->
+  <script src="script.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+/* cursor: url('/image/cursor.cur'),auto; */
+}
+/* i added the font style to all the properties. Give us an idea what it looks like in real time. */
+
+
+.favorites{
+    margin-top: 20%;
+}
+/* I had to margin the FAVORITES button low because you cant see it with the nav bar in the way */
+
+.hide {
+    display:none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    background-color: #005b61;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+      
+}
+
+.card, .card-body, .x-card-body{
+    background-color: #54b435;
+}
+
+.modal-header, .dishtype, .modal-footer{
+    background-color:#f0ff42 !important;
+}
+
+.navbarfixed{
+    background-color:#379237;
+}
+
+
+.pizza, button, input, .h1-title, a:hover{
+    cursor: url('/image/cursor.cur'),auto !important;
+}
+
+.h1-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  width: 160px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2px auto;
+  color: #ff4411;
+  bottom: 13px;
+  text-shadow: 0px 4px 10px rgba(178, 172, 183, 0.8);
+
+}
+
+.slogan{
+    margin: 5px 5px;
+    font: size 20px;
+    color:#444; 
+    word-spacing:1px; 
+    font-weight:normal; 
+    letter-spacing:2px;
+    text-transform: uppercase; 
+    text-decoration: overline;
+    font-weight:500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.h1-title:hover{
+    text-decoration: underline;
+}
+
+.fa-instagram{
+    color: purple;
+}
+
+
+
+
